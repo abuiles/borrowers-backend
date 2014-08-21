@@ -12,7 +12,7 @@ gem 'active_model_serializers', '~> 0.8.1'
 
 group :test do
   gem 'shoulda', '~> 3.5.0'
-  gem 'shoulda-matchers', '~> 2.6.2'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git'
 end
 
 # To use ActiveModel has_secure_password
