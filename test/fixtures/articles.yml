@@ -1,0 +1,7 @@
+one:
+  description: Ice
+  state: borrowed
+
+two:
+  description: Ghost
+  state: returned
