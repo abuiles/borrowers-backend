@@ -23,7 +23,7 @@ class Api::FriendsController < ApplicationController
     if @friend.save
       render json: @friend, status: :created, location: [:api, @friend]
     else
-      render json: @friend.errors, status: :unprocessable_entity
+      render json: { errors: @friend.errors }, status: :unprocessable_entity
     end
   end
 
@@ -33,7 +33,7 @@ class Api::FriendsController < ApplicationController
     if @friend.update(friend_params)
       head :no_content
     else
-      render json: @friend.errors, status: :unprocessable_entity
+      render json: { errors: @friend.errors }, status: :unprocessable_entity
     end
   end
 

@@ -23,7 +23,7 @@ class Api::ArticlesController < ApplicationController
     if @article.save
       render json: @article, status: :created, location: [:api, @article]
     else
-      render json: @article.errors, status: :unprocessable_entity
+      render json: { errors: @article.errors }, status: :unprocessable_entity
     end
   end
 
@@ -33,7 +33,7 @@ class Api::ArticlesController < ApplicationController
     if @article.update(article_params)
       head :no_content
     else
-      render json: @article.errors, status: :unprocessable_entity
+      render json: { errors: @article.errors }, status: :unprocessable_entity
     end
   end
 
