@@ -10,6 +10,10 @@ gem 'sqlite3'
 
 gem 'active_model_serializers', '~> 0.8.1'
 
+group :test do
+  gem 'shoulda', '~> 3.5.0'
+  gem 'shoulda-matchers', '~> 2.6.2'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
