@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20140821004015) do
 
   create_table "articles", force: true do |t|
     t.string   "description"
-    t.string   "state",       default: "borrowed"
+    t.string   "state"
     t.integer  "friend_id"
     t.datetime "created_at"
     t.datetime "updated_at"
