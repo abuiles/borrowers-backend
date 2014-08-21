@@ -14,5 +14,8 @@
     "RAILS_ENV": "production",
     "RACK_ENV": "production",
     "SECRET_KEY_BASE": "REDACTED"
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
   }
 }
