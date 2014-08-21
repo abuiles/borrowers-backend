@@ -1,0 +1,18 @@
+{
+  "name": "Borrowers Backend",
+  "description": "Backend application for ember-cli-101.com book.",
+  "keywords": [
+    "ember-cli",
+    "Rails",
+    "Ember.js"
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "env": {
+    "LANG": "en_US.UTF-8",
+    "RAILS_ENV": "production",
+    "RACK_ENV": "production",
+    "SECRET_KEY_BASE": "REDACTED"
+  }
+}
