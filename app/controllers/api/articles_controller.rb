@@ -52,6 +52,6 @@ class Api::ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:description, :state, :friend_id)
+    params.require(:article).permit(:description, :friend_id, :notes, :state)
   end
 end
