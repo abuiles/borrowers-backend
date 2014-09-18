@@ -11,15 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140918154951) do
+ActiveRecord::Schema.define(version: 20140918155629) do
 
   create_table "articles", force: true do |t|
     t.string   "description"
     t.string   "state",       default: "borrowed"
-    t.integer  "friend_id"
+    t.string   "friend_id",                        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "notes",       default: ""
+  end
+
+  create_table "clients", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "twitter"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "friends", force: true do |t|

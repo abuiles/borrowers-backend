@@ -1,7 +1,9 @@
 one:
   description: Ice
   state: borrowed
+  friend_id: 1
 
 two:
   description: Ghost
   state: returned
+  friend_id: 2

@@ -13,7 +13,7 @@ class Api::ArticlesControllerTest < ActionController::TestCase
 
   test "should create article" do
     assert_difference('Article.count') do
-      post :create, article: { description: 'Gold', state: 'borrowed', notes: 'scratched' }
+      post :create, article: { description: 'Gold', friend_id: 1, state: 'borrowed', notes: 'scratched' }
     end
 
     assert_response 201
