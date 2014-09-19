@@ -1,3 +1,3 @@
 class ArticleSerializer < ActiveModel::Serializer
-  attributes :id, :description, :state, :notes
+  attributes :id, :created_at, :description, :state, :notes
 end
