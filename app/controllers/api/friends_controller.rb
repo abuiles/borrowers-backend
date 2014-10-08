@@ -6,7 +6,7 @@ class Api::FriendsController < ApplicationController
   def index
     @friends = Friend.all
 
-    render json: @friends, each_serializer: serializer
+    render json: @friends
   end
 
   # GET /friends/1
@@ -53,14 +53,5 @@ class Api::FriendsController < ApplicationController
 
   def friend_params
     params.require(:friend).permit(:first_name, :last_name, :twitter, :email)
-  end
-
-  def serializer
-    case params[:serializer]
-    when 'sideload'
-      FriendSideloadSerializer
-    else
-      FriendSerializer
-    end
   end
 end
