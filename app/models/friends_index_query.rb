@@ -16,10 +16,10 @@ class FriendsIndexQuery
     if params[:sort_by]
       order_query = params[:sort_by]
 
-      if params[:sort_desc]
-        order_query =  "#{order_query} DESC"
-      else
+      if params[:sort_asc]
         order_query =  "#{order_query} ASC"
+      else
+        order_query =  "#{order_query} DESC"
       end
 
       result = result.order(order_query)
