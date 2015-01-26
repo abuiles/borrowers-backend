@@ -13,10 +13,10 @@ class FriendsIndexQuery
   def find
     result = scope
 
-    if params[:sort_by]
-      order_query = params[:sort_by]
+    if params[:sortBy]
+      order_query = params[:sortBy].underscore
 
-      if params[:sort_asc]
+      if params[:sortAscending] == "true"
         order_query =  "#{order_query} ASC"
       else
         order_query =  "#{order_query} DESC"

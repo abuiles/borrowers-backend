@@ -18,3 +18,4 @@ end
 
 gem 'rails_12factor', '~> 0.0.2'
 gem 'rack-cors', '~> 0.2.9', :require => 'rack/cors'
+gem 'counter_culture', '~> 0.1.29'
