@@ -1,6 +1,6 @@
 class Api::V4::FriendsController < Api::FriendsController
   def index
-    @friends = Friend.all
+    @friends = FriendsIndexQuery.find(Friend.all, params)
 
     render json: @friends, each_serializer: FriendV4Serializer
   end

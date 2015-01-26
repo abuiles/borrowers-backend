@@ -4,7 +4,7 @@ class Api::FriendsController < ApplicationController
   # GET /friends
   # GET /friends.json
   def index
-    @friends = Friend.all
+    @friends = FriendsIndexQuery.find(Friend.all, params)
 
     render json: @friends
   end
