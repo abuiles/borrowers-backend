@@ -16,6 +16,10 @@ class FriendsIndexQuery
     if params[:sortBy]
       order_query = params[:sortBy].underscore
 
+      if order_query == 'full_name'
+        order_query = 'first_name'
+      end
+
       if params[:sortAscending] == "true"
         order_query =  "#{order_query} ASC"
       else
