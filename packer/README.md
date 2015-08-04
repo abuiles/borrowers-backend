@@ -27,5 +27,9 @@ Edit `template.json` and replace the variables on top:
  
  After you do your chances, you need to increase the version manually on `template.json`
  
- ie: `"version": "0.0.3"`
+ ie: 
+ 
+ ```json
+   "version": "0.0.3"
+ ```
  
