@@ -4,7 +4,29 @@ This folder includes a `Vagranfile` to run this railsapp locally.
 
 #### base box
 
-This project use `"alvaro/ubuntu1402-ruby222"` as base box. There is a `packer` folder that you can use to build your own base box.
+This project use `"alvaro/ubuntu1402-ruby222"` as base box.
+
+There is a [packer](../packer) folder that you can use to build your own base box.
+
+
+### networking
+
+As is, the `Vagrantfile` will start the guest and map port `3000` from guest to host.
+
+If you wish to use this backend with intra vagrant vms netork, you can add:
+
+For [private network](https://docs.vagrantup.com/v2/networking/private_network.html) :
+
+```ruby
+  config.vm.network "private_network", ip: "192.168.50.4"
+```
+
+For [public network](https://docs.vagrantup.com/v2/networking/public_network.html) (bridged) :
+
+```ruby
+config.vm.network "public_network", ip: "192.168.0.17"
+```
+
 
 ### provision scripts
 
