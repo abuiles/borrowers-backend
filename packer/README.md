@@ -21,6 +21,12 @@ Set `ATLAS_TOKEN` variable, and run:
 `packer build template.json` to build this box locally
   
 After a sucessful run, the vagrant boxes will be uplodaded to atlas, under `atlas_username/atlas_name`
+
+If you don't have yet a user in [atlas](https://atlas.hashicorp.com), go to their website and create one:
+[https://atlas.hashicorp.com](https://atlas.hashicorp.com)
+
+If you haven't created a token yet, go to the atlas page to create a token [https://atlas.hashicorp.com/settings/tokens](https://atlas.hashicorp.com/settings/tokens)
+
   
 ### modifying this project
  
