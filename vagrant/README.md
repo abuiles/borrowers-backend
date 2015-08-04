@@ -12,6 +12,10 @@ The `provision.sh` script, is idempotent, on first time will setup all the requi
 
 On a second run, it will restart the rails application if running.
 
+Rails server will be started in tmux. Use 'vagrant ssh -c "tmux a"' to connect
+To detach and leave rails server running, use CTRL+b d
+To cancel rails server, use CTRL+c
+
 ### Folder structure
 
 Inside the virtual guest, `/vagrant` is mapped to the /vagrant folder.
