@@ -1,4 +1,4 @@
-This is a (packer)[https://packer.io] project.
+This is a [packer](https://packer.io) project.
 
 ### To use this project
 
