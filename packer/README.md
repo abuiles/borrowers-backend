@@ -13,24 +13,24 @@ Edit `template.json` and replace the variables on top:
         "atlas_username": "alvaro",
         "atlas_name": "ubuntu1402-ruby222"
     },
-  ```
-  Set `ATLAS_TOKEN` variable, and run:
+```
+Set `ATLAS_TOKEN` variable, and run:
   
-  `packer push template.json` to have atlas to build your box
+`packer push template.json` to have atlas to build your box
   
-  `packer build template.json` to build this box locally
+`packer build template.json` to build this box locally
   
-  After a sucessful run, the vagrant boxes will be uplodaded to atlas, under `atlas_username/atlas_name`
+After a sucessful run, the vagrant boxes will be uplodaded to atlas, under `atlas_username/atlas_name`
   
- ### modifying this project
+### modifying this project
  
- Have a look at `template.json` and the `scripts/` folder.
+Have a look at `template.json` and the `scripts/` folder.
  
- After you do your chances, you need to increase the version manually on `template.json`
+After you do your chances, you need to increase the version manually on `template.json`
  
- ie: 
+ie: 
  
- ```json
-   "version": "0.0.3"
- ```
+```json
+  "version": "0.0.3"
+```
  
