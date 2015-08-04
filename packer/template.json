@@ -1,11 +1,11 @@
 {
     "push": {
-      "name": "alvaro/ubuntu1402-ruby222",
+      "name": "alvaro/ubuntu14042-ruby222",
       "vcs": false
     },
     "variables": {
         "atlas_username": "alvaro",
-        "atlas_name": "ubuntu1402-ruby222"
+        "atlas_name": "ubuntu14042-ruby222"
     },
     "builders": [
         {
