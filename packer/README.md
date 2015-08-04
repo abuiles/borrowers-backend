@@ -17,6 +17,7 @@ Edit `template.json` and replace the variables on top:
   Set `ATLAS_TOKEN` variable, and run:
   
   `packer push template.json` to have atlas to build your box
+  
   `packer build template.json` to build this box locally
   
   After a sucessful run, the vagrant boxes will be uplodaded to atlas, under `atlas_username/atlas_name`
