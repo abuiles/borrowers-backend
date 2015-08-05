@@ -15,3 +15,8 @@
 /log/*.log
 /tmp
 config/database.yml
+
+#for Vagrant project
+.ruby-version
+vagrant/.vagrant
+vagrant/*log
