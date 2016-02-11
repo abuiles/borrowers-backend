@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.12'
+gem 'rails', '~> 4.1.14'
 
 gem 'rails-api'
 
@@ -9,7 +9,7 @@ gem 'spring', group: :development, platforms: :ruby
 gem 'pg', '~> 0.18.2', group: :production
 gem 'sqlite3',         group: :development
 
-gem 'active_model_serializers', '~> 0.8.3'
+gem 'active_model_serializers', '~> 0.10.0.rc4'
 
 group :test do
   gem 'shoulda', '~> 3.5.0'
