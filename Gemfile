@@ -1,21 +1,24 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.5'
+gem 'rails', '~> 4.1.14'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
+gem 'spring', group: :development, platforms: :ruby
 
-gem "pg", "~> 0.17.1", group: :production
+gem 'pg', '~> 0.18.2', group: :production
 gem 'sqlite3',         group: :development
 
-gem 'active_model_serializers', '~> 0.8.1'
+gem 'active_model_serializers', '~> 0.10.0.rc4'
 
 group :test do
   gem 'shoulda', '~> 3.5.0'
-  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git'
+  gem 'shoulda-matchers', '~> 2.8.0'
 end
 
-gem 'rails_12factor', '~> 0.0.2'
-gem 'rack-cors', '~> 0.2.9', :require => 'rack/cors'
-gem 'counter_culture', '~> 0.1.29'
+gem 'rails_12factor', '~> 0.0.3'
+gem 'rack-cors', '~> 0.4.0', require: 'rack/cors'
+gem 'counter_culture', '~> 0.1.33'
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
