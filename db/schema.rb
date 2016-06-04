@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150126155513) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "articles", force: true do |t|
     t.string   "description"
     t.string   "state",       default: "borrowed"
@@ -20,15 +23,6 @@ ActiveRecord::Schema.define(version: 20150126155513) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "notes",       default: ""
-  end
-
-  create_table "clients", force: true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "twitter"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "friends", force: true do |t|
